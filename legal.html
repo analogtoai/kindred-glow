@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be_Vietnam_Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#fffbff",
+              "secondary-fixed-dim": "#beddb5",
+              "on-error-container": "#6e1400",
+              "on-background": "#393835",
+              "secondary-container": "#ccebc2",
+              "surface-variant": "#ebe8e3",
+              "on-secondary": "#ffffff",
+              "on-error": "#ffffff",
+              "primary-fixed-dim": "#efac8a",
+              "outline": "#82807c",
+              "error-container": "#fd795a",
+              "surface-container": "#f7f3ef",
+              "error": "#ae4025",
+              "inverse-primary": "#ffba96",
+              "on-tertiary-fixed": "#204a51",
+              "on-primary": "#ffffff",
+              "surface-container-high": "#f1ede9",
+              "surface-dim": "#e5e2dd",
+              "secondary": "#506b4a",
+              "on-primary-container": "#64361c",
+              "secondary-fixed": "#ccebc2",
+              "surface": "#fffbff",
+              "inverse-on-surface": "#9f9c9a",
+              "on-secondary-fixed-variant": "#486242",
+              "tertiary-fixed": "#c7f3fb",
+              "tertiary-dim": "#355e66",
+              "primary-dim": "#7e4c30",
+              "on-tertiary-container": "#345d64",
+              "error-dim": "#791903",
+              "on-tertiary-fixed-variant": "#3e676e",
+              "surface-bright": "#fffbff",
+              "primary-container": "#ffba96",
+              "primary-fixed": "#ffba96",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#666461",
+              "tertiary-fixed-dim": "#b9e4ed",
+              "on-surface": "#393835",
+              "surface-container-highest": "#ebe8e3",
+              "primary": "#8c573a",
+              "on-primary-fixed": "#4c230a",
+              "on-secondary-fixed": "#2c4528",
+              "tertiary": "#426b72",
+              "on-secondary-container": "#3e5839",
+              "secondary-dim": "#455f3f",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#6f3f24",
+              "surface-tint": "#8c573a",
+              "outline-variant": "#bcb9b4",
+              "inverse-surface": "#0e0e0d",
+              "surface-container-low": "#fdf9f5",
+              "tertiary-container": "#c7f3fb"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fffbff;
+            color: #393835;
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8c573a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Kindred Glow">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar from Components -->
+<header class="bg-[#fffbff] dark:bg-slate-950/70 backdrop-blur-xl docked full-width top-0 sticky z-50 bg-[#fdf9f5] dark:bg-slate-900">
+<div class="max-w-screen-xl mx-auto flex justify-between items-center px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-[#8c573a] dark:text-[#efac8a]">
+<span class="material-symbols-outlined">person</span>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-semibold tracking-wide text-lg text-[#8c573a] dark:text-[#efac8a]">SoulBond</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="text-2xl font-bold text-[#8c573a] dark:text-[#efac8a] italic">Kindred Glow</div>
+<button class="text-[#8c573a] dark:text-[#efac8a] hover:bg-[#f1ede9] dark:hover:bg-slate-800 transition-colors p-2 rounded-full scale-95 duration-200 ease-in-out">
+<span class="material-symbols-outlined">energy_savings_leaf</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto px-6 pt-12 pb-32">
+<!-- Hero Disclaimer Section -->
+<section class="mb-16">
+<div class="bg-surface-container-low p-8 md:p-12 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+<div class="relative z-10 max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-xs font-semibold mb-6">Digital Use Only</span>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface mb-6 leading-tight">Your Trust is Our Foundation</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        Kindred Glow is designed as a tool for <span class="text-primary font-semibold">Digital Connection Amplification</span>. We focus on enhancing virtual bonds and fostering digital community through <span class="text-primary font-semibold">Glimmer Guidance</span>. Please note that our AI-assisted features are <span class="italic">not</span> a substitute for professional mental health advice.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">Read Full Terms</button>
+<button class="bg-secondary-container text-on-secondary-container px-8 py-3 rounded-full font-semibold hover:bg-secondary-fixed-dim transition-colors">Privacy Center</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid for Policy Sections -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Terms of Service (Large) -->
+<div class="md:col-span-7 bg-surface-container-low p-8 rounded-lg hover:bg-surface-container-lowest transition-all duration-300">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-primary-fixed-dim/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" data-icon="gavel">gavel</span>
+</div>
+<h3 class="font-headline text-xl font-bold">Terms of Service</h3>
+</div>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>By accessing Kindred Glow V1, you agree to our digital-first governing rules designed to keep virtual communication safe and meaningful. These terms focus on your online presence.</p>
+<ul class="space-y-3 list-disc pl-5">
+<li>Digital Eligibility &amp; Account Responsibility</li>
+<li>Acceptable Online Conduct &amp; Messaging Standards</li>
+<li>Glimmer Guidance AI-Assisted Content Policy</li>
+<li>Digital Asset and IP Rights</li>
+</ul>
+</div>
+<a class="inline-flex items-center gap-2 mt-8 text-primary font-semibold group" href="legal.html#terms">
+                    View Comprehensive Digital Terms
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+<!-- Liability (Medium) -->
+<div class="md:col-span-5 bg-surface-container-high p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-error-container/20 flex items-center justify-center text-error">
+<span class="material-symbols-outlined" data-icon="verified_user">verified_user</span>
+</div>
+<h3 class="font-headline text-xl font-bold">Liability Limitations</h3>
+</div>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">
+                    Kindred Glow provides its digital platform "as is." We are not liable for emotional outcomes from AI-assisted suggestions via Glimmer Guidance or virtual interactions. All services are currently digital-only.
+                </p>
+<div class="p-4 bg-surface-container-lowest rounded-md border border-outline-variant/10 text-xs text-on-surface-variant">
+                    Jurisdiction: State of Delaware, USA. Digital Only V1 Release.
+                </div>
+</div>
+<!-- Privacy Policy (Medium) -->
+<div class="md:col-span-5 bg-[#f1f5f2] dark:bg-slate-800 p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed-dim/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined" data-icon="shield_with_heart">shield_with_heart</span>
+</div>
+<h3 class="font-headline text-xl font-bold">Privacy &amp; Encryption</h3>
+</div>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">
+                    Your digital data privacy is treated with sanctity. We use end-to-end encryption for all digital communications and never sell your personal data to third parties.
+                </p>
+<div class="space-y-2">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/15 text-sm">
+<span>Digital Communication Scope</span>
+<span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/15 text-sm">
+<span>End-to-End Encryption Protocol</span>
+<span class="material-symbols-outlined text-xs" data-icon="chevron_right">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- User Responsibility & Service (Large) -->
+<div class="md:col-span-7 bg-surface-container-low p-8 rounded-lg">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1">
+<h4 class="font-headline font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary" data-icon="person_check">person_check</span>
+                            Digital Conduct
+                        </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Users are responsible for their digital interactions. Kindred Glow V1 is a digital-only experience; we do not facilitate or monitor physical logistics or offline meetings.
+                        </p>
+</div>
+<div class="flex-1">
+<h4 class="font-headline font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary" data-icon="auto_awesome">auto_awesome</span>
+                            Glimmer Guidance
+                        </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                            Our AI-assisted Glimmer Guidance provides connection suggestions based on encrypted data. We reserve the right to modify AI algorithms to improve connection accuracy.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Logo Accent -->
+<div class="mt-24 text-center">
+<div class="w-16 h-16 bg-surface-container-high rounded-full mx-auto mb-6 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="brightness_high" style="font-variation-settings: 'FILL' 1;">brightness_high</span>
+</div>
+<p class="text-on-surface-variant text-sm max-w-md mx-auto italic">
+                Kindred Glow is committed to transparency. For any legal inquiries regarding our digital-only services, contact our compliance team at legal@kindredglow.com
+            </p>
+</div>
+</main>
+<!-- BottomNavBar from Components -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fffbff]/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-[0_-10px_40px_rgba(140,87,58,0.04)] rounded-t-[2rem]">
+<a class="flex flex-col items-center justify-center text-[#666461] dark:text-slate-400 px-5 py-2 hover:text-[#8c573a] dark:hover:text-[#efac8a] transition-all font-['Be_Vietnam_Pro'] text-[11px] font-medium tracking-tight" href="index.html">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+            Home
+        </a>
+<a class="flex flex-col items-center justify-center text-[#666461] dark:text-slate-400 px-5 py-2 hover:text-[#8c573a] dark:hover:text-[#efac8a] transition-all font-['Be_Vietnam_Pro'] text-[11px] font-medium tracking-tight" href="index.html#credits">
+<span class="material-symbols-outlined mb-1" data-icon="toll">toll</span>
+            Credits
+        </a>
+<a class="flex flex-col items-center justify-center text-[#666461] dark:text-slate-400 px-5 py-2 hover:text-[#8c573a] dark:hover:text-[#efac8a] transition-all font-['Be_Vietnam_Pro'] text-[11px] font-medium tracking-tight" href="index.html#premium">
+<span class="material-symbols-outlined mb-1" data-icon="workspace_premium">workspace_premium</span>
+            Premium
+        </a>
+<a class="flex flex-col items-center justify-center bg-[#ffba96]/20 dark:bg-[#8c573a]/30 text-[#8c573a] dark:text-[#efac8a] rounded-full px-5 py-2 font-['Be_Vietnam_Pro'] text-[11px] font-medium tracking-tight scale-110 duration-300" href="support.html">
+<span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+            Settings
+        </a>
+</nav>
+
+    <script>
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW error', err));
+        });
+      }
+      // PWA Install Prompt
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.querySelectorAll('.pwa-install-btn').forEach(btn => {
+          btn.style.display = 'flex';
+          btn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+              deferredPrompt.prompt();
+              const { outcome } = await deferredPrompt.userChoice;
+              deferredPrompt = null;
+            }
+          });
+        });
+      });
+    </script>
+</body></html>

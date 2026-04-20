@@ -1,0 +1,3 @@
+# Kindred Glow - Netlify Redirects
+# Serves index.html for any unmatched route (enables SPA-style navigation)
+/app/*    /index.html   200

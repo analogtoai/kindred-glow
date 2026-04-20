@@ -1,0 +1,40 @@
+{
+  "name": "Kindred Glow: Deep Connection",
+  "short_name": "Kindred Glow",
+  "description": "Connection, at your own pace. Kindred Glow helps you nurture meaningful relationships without the noise.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#8c573a",
+  "background_color": "#fffbff",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["social", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "My Connections",
+      "url": "/index.html#connections",
+      "description": "View your connection garden"
+    },
+    {
+      "name": "Support",
+      "url": "/support.html",
+      "description": "Get help from The Keeper"
+    }
+  ]
+}

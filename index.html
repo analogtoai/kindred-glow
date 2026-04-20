@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kindred Glow | Connection, at your own pace.</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#ccebc2",
+                    "on-primary-fixed": "#4c230a",
+                    "on-tertiary-fixed": "#204a51",
+                    "surface-tint": "#8c573a",
+                    "tertiary": "#426b72",
+                    "error-container": "#fd795a",
+                    "tertiary-container": "#c7f3fb",
+                    "inverse-primary": "#ffba96",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffba96",
+                    "on-surface": "#393835",
+                    "surface-container-high": "#f1ede9",
+                    "background": "#fffbff",
+                    "on-background": "#393835",
+                    "surface-container-low": "#fdf9f5",
+                    "on-secondary-container": "#3e5839",
+                    "on-error-container": "#6e1400",
+                    "inverse-surface": "#0e0e0d",
+                    "on-secondary-fixed": "#2c4528",
+                    "surface-container": "#f7f3ef",
+                    "on-primary-container": "#64361c",
+                    "inverse-on-surface": "#9f9c9a",
+                    "on-tertiary": "#ffffff",
+                    "secondary": "#506b4a",
+                    "primary-container": "#ffba96",
+                    "surface-variant": "#ebe8e3",
+                    "on-tertiary-fixed-variant": "#3e676e",
+                    "secondary-dim": "#455f3f",
+                    "secondary-fixed": "#ccebc2",
+                    "tertiary-fixed": "#c7f3fb",
+                    "surface-container-highest": "#ebe8e3",
+                    "tertiary-dim": "#355e66",
+                    "secondary-fixed-dim": "#beddb5",
+                    "error-dim": "#791903",
+                    "on-surface-variant": "#666461",
+                    "primary-dim": "#7e4c30",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#6f3f24",
+                    "surface-dim": "#e5e2dd",
+                    "outline": "#82807c",
+                    "on-secondary-fixed-variant": "#486242",
+                    "tertiary-fixed-dim": "#b9e4ed",
+                    "on-tertiary-container": "#345d64",
+                    "outline-variant": "#bcb9b4",
+                    "primary": "#8c573a",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fffbff",
+                    "surface": "#fffbff",
+                    "primary-fixed-dim": "#efac8a",
+                    "error": "#ae4025"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; background-color: #fffbff; color: #393835; }
+        .font-headline { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); }
+        .sunlight-glow { background: linear-gradient(135deg, #8c573a 0%, #ffba96 100%); }
+        .ethereal-shadow { box-shadow: 0 40px 60px -15px rgba(140, 87, 58, 0.06); }
+    </style>
+
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8c573a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Kindred Glow">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-900/70 backdrop-blur-2xl shadow-[0_40px_60px_-15px_rgba(140,87,58,0.06)]">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
+<div class="text-xl font-bold text-orange-900 dark:text-orange-50 font-headline tracking-tight">Kindred Glow</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-orange-800 dark:text-orange-200 font-semibold border-b-2 border-orange-400 pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="index.html#features">Features</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="index.html#install">Installation</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="support.html">Support</a>
+</div>
+<button class="bg-primary hover:opacity-90 text-on-primary px-6 py-2.5 rounded-full font-headline text-sm font-semibold active:scale-95 transition-all duration-200">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center px-8 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="Dreamy abstract background with soft golden bokeh lights and warm ethereal glows in a botanical garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJXRdZMkg9b_H8kXWrfKwEGdxd0SG8F2bVI7pvUwPPRLFxl3aJ0EpLTZXNCRAd9fef2LqbTs7bNZc9RzAlr4Z9D6qJzVG3p-bWi0MBlt7bYzlUMpXeFf5nJzXeYiHRH61MJOgC9zaEVNrRl5n5c29krhHfudMSEtfTeYOyAFplu1_04gc6_1mcaV1sPECR1-g8u5XAHRAeFFwDCnPhbG7aFzGVBZXOk7979a1j8ddCSf5veSUA1RDOHPSdSerE8rHyC7OaSiub1iU"/>
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface to-surface"></div>
+</div>
+<div class="relative z-10 max-w-4xl text-center space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-container/30 text-on-secondary-container border border-secondary-container/20">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">colors_spark</span>
+<span class="text-xs font-semibold tracking-wide uppercase font-label">A New Digital Ethos</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-extrabold font-headline text-on-surface leading-[1.1] tracking-tight">
+                    Connection, <br/>
+<span class="text-primary italic">at your own pace.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
+                    Kindred Glow transforms your social orbit into a serene garden. No noise, no pressure—just the warmth of meaningful presence.
+                </p>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="sunlight-glow text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
+                        Install the Sanctuary
+                    </button>
+<button class="bg-surface-container-low text-on-surface px-8 py-4 rounded-full font-headline font-semibold text-lg border border-outline-variant/10 hover:bg-surface-container transition-colors">
+                        Explore the Garden
+                    </button>
+</div>
+</div>
+</section>
+<!-- The Calm Stream - Bento Grid Philosophy -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<!-- Glimmers Section -->
+<div class="md:col-span-7 bg-surface-container-low p-10 rounded-xl relative overflow-hidden group">
+<div class="relative z-10 space-y-4 max-w-md">
+<div class="w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h2 class="text-3xl font-bold font-headline text-on-surface">Glimmers</h2>
+<p class="text-on-surface-variant leading-relaxed">
+                            Ephemeral notes that catch the light. Share a thought, a photo, or a quiet moment without the weight of permanent record. Simple, brief, and beautifully human.
+                        </p>
+<ul class="space-y-3 pt-4">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                Vanishes after 24 hours of peace
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                                No public counts or metric pressure
+                            </li>
+</ul>
+</div>
+<!-- Decorative overlapping element -->
+<div class="absolute top-10 -right-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl group-hover:bg-primary-container/30 transition-colors duration-700"></div>
+<img class="absolute bottom-0 right-0 w-64 h-64 object-cover rounded-tl-xl opacity-80 transition-transform duration-500 group-hover:scale-105" data-alt="Close up of morning dew on a delicate leaf with sunlight refracting into tiny glowing glimmers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbRu02bUKNTTyj4locTjXU1Kll3nhSNUOEVetxi1JH0AAgTshNwdgGHclK7DTh9e-eibRZ3dJ3cRauhFID956fwl58ZQbGdpi32114gDp6D7D9ani8hOIO9vuK5rbC7iOYU4AhsxDHu9ig4Lj1PXwdOPsJp2LKf9ifO9y90XZrmmsOhnl4633X1eqSEbJRGMZwrbDuJnJF23Tc9WvzF4HdV_OnqE30R5b8tSP1Q1yMUhiP1JjHA4kiM_f1HzZx9EIZlzIpTu7K_sc"/>
+</div>
+<!-- Deep Roots Section -->
+<div class="md:col-span-5 bg-surface-container-high p-10 rounded-xl space-y-6 flex flex-col justify-between border border-outline-variant/5">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined">nature_people</span>
+</div>
+<h2 class="text-3xl font-bold font-headline text-on-surface">Deep Roots</h2>
+<p class="text-on-surface-variant leading-relaxed italic">
+                            "Cultivating space for those who matter most."
+                        </p>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            A private sanctuary for your inner circle. Share long-form reflections, collaborative journals, and shared memories in a space that never scrolls.
+                        </p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm">
+<div class="flex -space-x-3 overflow-hidden mb-4">
+<img class="inline-block h-10 w-10 rounded-full ring-4 ring-surface-container-high" data-alt="Portrait of a smiling woman in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmUiZ_xdWTGVpykWmYlOzYfud5BDgRuLx3RPUSnSFmtOsmicaRqQXUpBsjbKPlE9IPZjQmykcqQI81AtYrZxt2nJxe5xZ6fggd48TTqUFkzfC5vXGuTNQLRXqRESJ0Rsa4TFguv03ZHhoqnnZmC6aQqGueAlZMrEHK0g_CfTJuI1XSIy5nbsVSPwiEoh8LMpr6IMBkj2-pwQ1Nn5soVqUW17oFkb3Iu4wag5ZA8vqrscvl60lM6VCUiVEAsvtn5WIEUmkffXAYRlc"/>
+<img class="inline-block h-10 w-10 rounded-full ring-4 ring-surface-container-high" data-alt="Portrait of a relaxed man in a sunlit outdoor setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMoT5wfQ5PXMUvoeAuQQfe6WKu8sZs6TjkfH0fi4Bezi3VaxRICVq73HBuyRIiO3BmF2TBpDK10WMqy6gdennX5vnDh_b_209F4xcO4LH5O4k6EXrMP3oRr56IHWeiSgfqUg5T6WrH-_KfWKm1iDd86WZdCTLd6yBqWUC85UJ5qab-ie7a5fvlIo5_UAgc76KyM3lPD_Nkg550IfjocKoqD1ni_Zu0pm5F_cEHoRX6Nc2KEGq2kl5NhhstEIAe2qIui-mdfDPbVBA"/>
+<img class="inline-block h-10 w-10 rounded-full ring-4 ring-surface-container-high" data-alt="Portrait of a woman with a gentle expression in warm golden hour light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD16INDF4xWBU9fzlM0qcgwy1cgNFYugbM3Ngaj2GU4GEoYIh7TkhcyT2wE6dDGtzbltYXK4zSoX4s0oKQYyV_jUTFzIHSELRrpOzObGsmHHSDvzNWY3hineNJXmAe75R1pAllaCa6wyDYynjtSfH1cDLGkQSv_RYtkZywMo59Hxx_I_sH4pHJ9w-TFh4eMvt8NGV6t-lJy2yvDuJ_tCNopGCSRsg_1B4-Sb2azgxOYUFKBfGRmo_C_iLtOMhYLQiquYlvoEUjrUeA"/>
+</div>
+<div class="text-xs font-bold text-primary tracking-widest uppercase">3 Active Roots</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Spotlight - Asymmetrical Layout -->
+<section class="max-w-7xl mx-auto px-8 py-24 bg-surface-container-low rounded-xl">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="lg:w-1/2 relative">
+<div class="bg-white p-8 rounded-lg ethereal-shadow rotate-2 relative z-10 max-w-md ml-auto">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<span class="font-headline font-bold">The Quiet Hour</span>
+</div>
+<div class="h-4 w-3/4 bg-stone-100 rounded-full mb-3"></div>
+<div class="h-4 w-1/2 bg-stone-100 rounded-full mb-6"></div>
+<div class="bg-stone-50 p-4 rounded-lg italic text-sm text-on-surface-variant">
+                            "Notifications paused. Breath easy."
+                        </div>
+</div>
+<div class="absolute top-0 left-0 bg-secondary-container p-6 rounded-lg shadow-sm -rotate-6 z-0 w-64 h-48 flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-on-secondary-container">bedtime</span>
+</div>
+</div>
+<div class="lg:w-1/2 space-y-6">
+<h3 class="text-4xl font-extrabold font-headline text-on-surface">Designed for Presence</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Our interface doesn't fight for your attention. It yields to it. We use soft tonal layering and intentional spacing to ensure your digital life feels like a restful retreat, not a noisy marketplace.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container rounded-lg border border-outline-variant/10">
+<span class="text-primary font-bold block mb-1">01</span>
+<span class="text-sm font-semibold">Tonal Focus</span>
+</div>
+<div class="p-4 bg-surface-container rounded-lg border border-outline-variant/10">
+<span class="text-primary font-bold block mb-1">02</span>
+<span class="text-sm font-semibold">Low Contrast</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="max-w-7xl mx-auto px-8 py-32 text-center">
+<div class="bg-primary-container/20 py-20 px-8 rounded-xl space-y-10 relative overflow-hidden">
+<div class="relative z-10 space-y-6">
+<h2 class="text-5xl md:text-6xl font-extrabold font-headline text-on-primary-container leading-tight">
+                        Ready to enter the <br/>Ethereal Garden?
+                    </h2>
+<p class="text-on-primary-container/80 max-w-xl mx-auto text-lg">
+                        Join 20,000+ souls cultivating warmth across the digital expanse.
+                    </p>
+<div class="pt-6">
+<button class="sunlight-glow text-on-primary px-12 py-5 rounded-full font-headline font-bold text-xl ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
+                            Install the Sanctuary
+                        </button>
+</div>
+</div>
+<!-- Ambient background glow elements -->
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-tertiary-fixed-dim/30 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-stone-50 dark:bg-stone-950 w-full py-16 border-t border-orange-100/10 dark:border-white/5">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 font-be-vietnam-pro text-sm leading-relaxed">
+<div class="space-y-6">
+<div class="text-lg font-bold text-orange-900 dark:text-orange-50 font-headline">Kindred Glow</div>
+<p class="text-stone-500">© 2024 Kindred Glow. Cultivating digital warmth.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-400 hover:text-primary transition-colors cursor-pointer">language</span>
+<span class="material-symbols-outlined text-stone-400 hover:text-primary transition-colors cursor-pointer">share</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Product</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="about.html#philosophy">Features</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#changelog">Installation</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#rules">Philosophy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#privacy">Support</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#terms">Changelog</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html">Garden Rules</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Legal</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+</footer>
+
+    <script>
+      // Service Worker Registration
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW error', err));
+        });
+      }
+      // PWA Install Prompt
+      let deferredPrompt;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        document.querySelectorAll('.pwa-install-btn').forEach(btn => {
+          btn.style.display = 'flex';
+          btn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+              deferredPrompt.prompt();
+              const { outcome } = await deferredPrompt.userChoice;
+              deferredPrompt = null;
+            }
+          });
+        });
+      });
+    </script>
+</body></html>

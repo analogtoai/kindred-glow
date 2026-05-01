@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
-  <rect width="192" height="192" rx="40" fill="#8c573a"/>
-  <circle cx="96" cy="96" r="56" fill="#ffba96" opacity="0.3"/>
-  <!-- Stylized leaf/flame shape -->
-  <path d="M96 40 C96 40, 130 65, 130 96 C130 118, 116 136, 96 140 C76 136, 62 118, 62 96 C62 65, 96 40, 96 40Z" fill="#fffbff" opacity="0.95"/>
-  <path d="M96 65 C96 65, 112 80, 112 96 C112 108, 105 118, 96 120 C87 118, 80 108, 80 96 C80 80, 96 65, 96 65Z" fill="#8c573a" opacity="0.4"/>
-  <circle cx="96" cy="96" r="8" fill="#8c573a"/>
-</svg>

@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About the Sanctuary | Kindred Glow</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -14,58 +14,60 @@
         theme: {
           extend: {
             "colors": {
-                    "secondary-container": "#ccebc2",
-                    "on-primary-fixed": "#4c230a",
-                    "on-tertiary-fixed": "#204a51",
-                    "surface-tint": "#E8324A",
-                    "tertiary": "#426b72",
-                    "error-container": "#fd795a",
-                    "tertiary-container": "#c7f3fb",
-                    "inverse-primary": "#ffba96",
-                    "on-error": "#ffffff",
-                    "primary-fixed": "#FFD166",
-                    "on-surface": "#393835",
-                    "surface-container-high": "#f1ede9",
-                    "background": "#FFFAF5",
-                    "on-background": "#393835",
-                    "surface-container-low": "#FEF6EE",
-                    "on-secondary-container": "#3e5839",
-                    "on-error-container": "#6e1400",
-                    "inverse-surface": "#0e0e0d",
-                    "on-secondary-fixed": "#2c4528",
-                    "surface-container": "#FAEEE5",
-                    "on-primary-container": "#64361c",
-                    "inverse-on-surface": "#9f9c9a",
-                    "on-tertiary": "#ffffff",
-                    "secondary": "#506b4a",
-                    "primary-container": "#FFD166",
-                    "surface-variant": "#ebe8e3",
-                    "on-tertiary-fixed-variant": "#3e676e",
-                    "secondary-dim": "#455f3f",
-                    "secondary-fixed": "#ccebc2",
-                    "tertiary-fixed": "#c7f3fb",
-                    "surface-container-highest": "#ebe8e3",
-                    "tertiary-dim": "#355e66",
-                    "secondary-fixed-dim": "#beddb5",
-                    "error-dim": "#791903",
-                    "on-surface-variant": "#666461",
-                    "primary-dim": "#7e4c30",
-                    "on-secondary": "#ffffff",
-                    "surface-container-lowest": "#ffffff",
-                    "on-primary-fixed-variant": "#6f3f24",
-                    "surface-dim": "#e5e2dd",
-                    "outline": "#82807c",
-                    "on-secondary-fixed-variant": "#486242",
-                    "tertiary-fixed-dim": "#b9e4ed",
-                    "on-tertiary-container": "#345d64",
-                    "outline-variant": "#bcb9b4",
-                    "primary": "#E8324A",
+                    "primary": "#E11D48",
+                    "primary-dark": "#B11226",
+                    "primary-light": "#FF4D2D",
+                    "primary-container": "#FFE3DA",
                     "on-primary": "#ffffff",
-                    "surface-bright": "#fffbff",
-                    "surface": "#FFFAF5",
-                    "primary-fixed-dim": "#efac8a",
-                    "error": "#ae4025"
-            },
+                    "on-primary-container": "#3A0B10",
+                    "on-primary-fixed": "#3A0B10",
+                    "on-primary-fixed-variant": "#B11226",
+                    "primary-fixed": "#FFE3DA",
+                    "primary-fixed-dim": "#FFBCAE",
+                    "primary-dim": "#B11226",
+                    "inverse-primary": "#FFE3DA",
+                    "surface-tint": "#E11D48",
+                    "secondary": "#B11226",
+                    "secondary-container": "#FFE3DA",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#3A0B10",
+                    "secondary-fixed": "#FFE3DA",
+                    "secondary-fixed-dim": "#FFBCAE",
+                    "secondary-dim": "#8A0E1C",
+                    "on-secondary-fixed": "#3A0B10",
+                    "on-secondary-fixed-variant": "#B11226",
+                    "tertiary": "#FF4D2D",
+                    "tertiary-container": "#FFE3DA",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-container": "#3A0B10",
+                    "tertiary-fixed": "#FFE3DA",
+                    "tertiary-fixed-dim": "#FFBCAE",
+                    "tertiary-dim": "#CC3A1F",
+                    "on-tertiary-fixed": "#3A0B10",
+                    "on-tertiary-fixed-variant": "#CC3A1F",
+                    "background": "#FFFAF9",
+                    "on-background": "#3A0B10",
+                    "surface": "#FFFAF9",
+                    "surface-bright": "#FFFAF9",
+                    "surface-dim": "#F5D8D4",
+                    "surface-variant": "#FFE3DA",
+                    "on-surface": "#3A0B10",
+                    "on-surface-variant": "#6B2030",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#FFF5F3",
+                    "surface-container": "#FFEDE9",
+                    "surface-container-high": "#FFE3DA",
+                    "surface-container-highest": "#FFD5CE",
+                    "inverse-surface": "#3A0B10",
+                    "inverse-on-surface": "#FFE3DA",
+                    "outline": "#A0404F",
+                    "outline-variant": "#FFBCAE",
+                    "error": "#B11226",
+                    "error-container": "#FFE3DA",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#3A0B10",
+                    "error-dim": "#8A0E1C"
+                },
             "borderRadius": {
                     "DEFAULT": "1rem",
                     "lg": "2rem",
@@ -73,53 +75,70 @@
                     "full": "9999px"
             },
             "fontFamily": {
-                    "headline": ["Plus Jakarta Sans"],
-                    "body": ["Be Vietnam Pro"],
-                    "label": ["Be Vietnam Pro"]
-            }
+                    "headline": ["Fraunces", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+                }
           },
         },
       }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #FFFAF9; 
+            color: #3A0B10; 
         }
-        .sunlight-shadow {
-            box-shadow: 0 40px 60px -15px rgba(140, 87, 58, 0.06);
-        }
-        body {
-            background-color: #FFFAF5;
-            color: #393835;
-            font-family: 'Be Vietnam Pro', sans-serif;
-        }
-    </style>
+        .font-headline { font-family: 'Fraunces', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 250, 249, 0.85); backdrop-filter: blur(24px); }
+        .sunlight-glow { background: linear-gradient(135deg, #B11226 0%, #FF4D2D 100%); }
+        .ethereal-shadow { box-shadow: 0 40px 60px -15px rgba(177, 18, 38, 0.15); }
 
-    
-    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta property="og:title" content="Kindred Glow | Connection, at your own pace.">
-    <meta property="og:description" content="Nurture the relationships that matter most.">
-    <meta property="og:image" content="https://kindredglow.ai/og-image.jpg">
-    <meta property="og:url" content="https://kindredglow.ai">
-    <meta property="og:type" content="website">
+        /* MOBILE FIXES */
+        @media (max-width: 768px) {
+          section.relative.min-h-\[921px\] { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 3rem !important; }
+          .md\:col-span-7 img.absolute { display: none !important; }
+          .rotate-2 { transform: none !important; margin: 0 auto !important; }
+          .-rotate-6 { display: none !important; }
+          .py-24 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+          .py-32 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+          .lg\:flex-row { flex-direction: column !important; }
+          .lg\:w-1\/2 { width: 100% !important; }
+          h1.text-6xl { font-size: 3rem !important; line-height: 1.1 !important; }
+          .px-8 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        }
+        </style>
 
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#8c573a">
+    <meta name="theme-color" content="#E11D48">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Kindred Glow">
     <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta property="og:title" content="Kindred Glow | Connection, at your own pace.">
+    <meta property="og:description" content="Nurture the relationships that matter most. No noise, no pressure — just the warmth of meaningful presence.">
+    <meta property="og:image" content="https://kindredglow.ai/og-image.jpg">
+    <meta property="og:url" content="https://kindredglow.ai">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://kindredglow.ai/og-image.jpg">
 </head>
 <body class="selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-stone-900/70 backdrop-blur-2xl">
 <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
-<div class="text-xl font-bold text-rose-700 dark:text-orange-50 font-headline tracking-tight">Kindred Glow</div>
+<div class="text-xl font-bold text-rose-900 dark:text-rose-50 font-headline tracking-tight">Kindred Glow</div>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-rose-600 dark:text-orange-200 font-semibold border-b-2 border-rose-400 pb-1 font-headline tracking-tight text-sm transition-all duration-300" href="index.html#features">Features</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium pb-1 font-headline tracking-tight text-sm hover:text-rose-500 dark:hover:text-orange-400 transition-all duration-300" href="index.html#install">Installation</a>
-<a class="text-stone-600 dark:text-stone-400 font-medium pb-1 font-headline tracking-tight text-sm hover:text-rose-500 dark:hover:text-orange-400 transition-all duration-300" href="support.html">Support</a>
+<a class="text-rose-800 dark:text-rose-200 font-semibold border-b-2 border-rose-400 pb-1 font-headline tracking-tight text-sm transition-all duration-300" href="index.html#features">Features</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium pb-1 font-headline tracking-tight text-sm hover:text-rose-600 dark:hover:text-orange-400 transition-all duration-300" href="index.html#install">Installation</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium pb-1 font-headline tracking-tight text-sm hover:text-rose-600 dark:hover:text-orange-400 transition-all duration-300" href="support.html">Support</a>
 </div>
 <button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-headline font-semibold text-sm active:scale-95 transition-transform duration-200 sunlight-shadow">
                 Get Started
@@ -273,31 +292,31 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-16 bg-stone-50 dark:bg-stone-950 border-t border-orange-100/10 dark:border-white/5 font-body text-sm leading-relaxed">
+<footer class="w-full py-16 bg-stone-50 dark:bg-stone-950 border-t border-rose-100/10 dark:border-white/5 font-body text-sm leading-relaxed">
 <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
 <div class="flex flex-col gap-6">
-<div class="text-lg font-bold text-rose-700 dark:text-orange-50 font-headline">Kindred Glow</div>
+<div class="text-lg font-bold text-rose-900 dark:text-rose-50 font-headline">Kindred Glow</div>
 <p class="text-stone-500 dark:text-stone-500">Cultivating digital warmth and intentional connection in a world of noise.</p>
 </div>
 <div class="flex flex-col gap-4">
 <h4 class="font-bold text-stone-700 dark:text-stone-300">Product</h4>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="about.html#philosophy">Features</a>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="legal.html#privacy">Installation</a>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="about.html">Support</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="about.html#philosophy">Features</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="legal.html#privacy">Installation</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="about.html">Support</a>
 </div>
 <div class="flex flex-col gap-4">
 <h4 class="font-bold text-stone-700 dark:text-stone-300">Company</h4>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="about.html#philosophy">Our Story</a>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="about.html#philosophy">Philosophy</a>
-<a class="text-stone-500 hover:text-rose-600 dark:hover:text-amber-300 transition-colors" href="legal.html">Privacy Policy</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="about.html#philosophy">Our Story</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="about.html#philosophy">Philosophy</a>
+<a class="text-stone-500 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="legal.html">Privacy Policy</a>
 </div>
 <div class="flex flex-col gap-4">
 <h4 class="font-bold text-stone-700 dark:text-stone-300">Connect</h4>
 <div class="flex gap-4">
-<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-rose-600" data-icon="language">language</span>
-<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-rose-600" data-icon="share">share</span>
+<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-rose-700" data-icon="language">language</span>
+<span class="material-symbols-outlined text-stone-400 cursor-pointer hover:text-rose-700" data-icon="share">share</span>
 </div>
-<p class="text-stone-500 mt-4">© 2024 Kindred Glow. Cultivating digital warmth.</p>
+<p class="text-stone-500 mt-4">© 2025 Kindred Glow. Cultivating digital warmth.</p>
 </div>
 </div>
 </footer>

@@ -147,29 +147,101 @@
 </nav>
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center justify-center px-8 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-20" data-alt="Dreamy abstract background with soft golden bokeh lights and warm ethereal glows in a botanical garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJXRdZMkg9b_H8kXWrfKwEGdxd0SG8F2bVI7pvUwPPRLFxl3aJ0EpLTZXNCRAd9fef2LqbTs7bNZc9RzAlr4Z9D6qJzVG3p-bWi0MBlt7bYzlUMpXeFf5nJzXeYiHRH61MJOgC9zaEVNrRl5n5c29krhHfudMSEtfTeYOyAFplu1_04gc6_1mcaV1sPECR1-g8u5XAHRAeFFwDCnPhbG7aFzGVBZXOk7979a1j8ddCSf5veSUA1RDOHPSdSerE8rHyC7OaSiub1iU"/>
-<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface to-surface"></div>
-</div>
+<section class="relative flex items-center justify-center px-8 pt-32 pb-24 overflow-hidden">
+<!-- Warm radial glow background -->
+<div class="absolute inset-0 z-0" style="background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(225,29,72,0.08) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 80% 80%, rgba(255,77,45,0.06) 0%, transparent 60%);"></div>
 <div class="relative z-10 max-w-4xl text-center space-y-8">
 
-<h1 class="text-6xl md:text-8xl font-extrabold font-headline text-on-surface leading-[1.1] tracking-tight">
-                    Connection, <br/>
-<span class="text-primary italic">at your own pace.</span>
-</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
-                    Kindred Glow transforms your social orbit into a serene garden. No noise, no pressure—just the warmth of meaningful presence.
-                </p>
-<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-<button class="sunlight-glow text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
-                        Install the Sanctuary
-                    </button>
-<button class="bg-surface-container-low text-on-surface px-8 py-4 rounded-full font-headline font-semibold text-lg border border-outline-variant/10 hover:bg-surface-container transition-colors">
-                        Explore the Garden
-                    </button>
+  <!-- Emotional hook -->
+  <p class="text-base font-semibold tracking-widest uppercase font-body" style="color:#E11D48; letter-spacing:0.18em;">Think of someone you miss right now.</p>
+
+  <!-- Hero headline -->
+  <h1 class="font-headline font-extrabold text-on-surface leading-[1.05] tracking-tight" style="font-size:clamp(2.8rem,8vw,5.5rem);">
+    Never lose touch with<br/>
+    <span class="italic" style="color:#E11D48;">the people who matter.</span>
+  </h1>
+
+  <!-- Sub-headline -->
+  <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
+    Kindred Glow gently reminds you to reach out, helps you remember what matters about each person, and makes staying connected feel effortless — not like another chore.
+  </p>
+
+  <!-- CTAs -->
+  <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <button class="sunlight-glow text-white px-10 py-4 rounded-full font-headline font-bold text-lg ethereal-shadow active:scale-95 transition-transform pwa-install-btn" style="background:linear-gradient(135deg,#B11226 0%,#FF4D2D 100%);">
+      Start Reconnecting — Free
+    </button>
+    <button class="text-on-surface-variant px-8 py-4 rounded-full font-body font-medium text-base border border-outline-variant hover:bg-surface-container transition-colors">
+      See how it works ↓
+    </button>
+  </div>
+
+  <!-- Social proof micro-line -->
+  <p class="text-sm text-on-surface-variant font-body pt-2 opacity-70">
+    No account required to get started &nbsp;·&nbsp; Works on any device &nbsp;·&nbsp; Add to home screen in seconds
+  </p>
+
 </div>
-</div>
+</section>
+
+<!-- Emotional Resonance Band -->
+<section class="py-12 px-8" style="background:linear-gradient(135deg,#B11226 0%,#E11D48 50%,#FF4D2D 100%);">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="font-headline font-bold text-white leading-snug" style="font-size:clamp(1.4rem,4vw,2.2rem);">
+      "The average person loses touch with 90% of their close friends by age 45."
+    </p>
+    <p class="mt-4 text-white/80 font-body text-base">Kindred Glow exists so that doesn't have to be you.</p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="features" class="max-w-5xl mx-auto px-8 py-24">
+  <div class="text-center mb-16">
+    <h2 class="font-headline font-extrabold text-on-surface mb-4" style="font-size:clamp(2rem,5vw,3rem);">
+      Staying close has never been<br/><span class="italic" style="color:#E11D48;">this simple.</span>
+    </h2>
+    <p class="text-on-surface-variant font-body text-lg max-w-xl mx-auto">Three steps. No learning curve. Just the people you love.</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Step 1 -->
+    <div class="relative bg-surface-container-low rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#B11226,#E11D48);">1</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Add your people</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">Add the friends, family, or old colleagues you want to stay close to. Takes 30 seconds.</p>
+      <div class="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider" style="color:#E11D48;">
+        <span class="material-symbols-outlined text-sm">person_add</span> Your inner circle
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="relative bg-surface-container rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow" style="border:2px solid rgba(225,29,72,0.15);">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#E11D48,#FF4D2D);">2</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Get a gentle nudge</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">Kindred Glow notices when it's been a while and sends you a warm reminder — not a guilt trip, just a nudge.</p>
+      <div class="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider" style="color:#E11D48;">
+        <span class="material-symbols-outlined text-sm">notifications_active</span> Gentle reminders
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="relative bg-surface-container-low rounded-2xl p-8 text-center group hover:shadow-lg transition-shadow">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#FF4D2D,#E11D48);">3</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Reach out & reconnect</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">One tap to send a message, share a memory, or just say you were thinking of them. That's all it takes.</p>
+      <div class="mt-6 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider" style="color:#E11D48;">
+        <span class="material-symbols-outlined text-sm">favorite</span> Real connection
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA under how it works -->
+  <div class="text-center mt-14">
+    <button class="sunlight-glow text-white px-10 py-4 rounded-full font-headline font-bold text-lg ethereal-shadow active:scale-95 transition-transform pwa-install-btn" style="background:linear-gradient(135deg,#B11226 0%,#FF4D2D 100%);">
+      Add to Home Screen — Free
+    </button>
+    <p class="mt-4 text-sm text-on-surface-variant font-body">No app store. No signup required. Just tap and go.</p>
+  </div>
 </section>
 <!-- The Calm Stream - Bento Grid Philosophy -->
 <section class="max-w-7xl mx-auto px-8 py-24">
@@ -264,24 +336,24 @@
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="max-w-7xl mx-auto px-8 py-32 text-center">
-<div class="bg-primary-container/20 py-20 px-8 rounded-xl space-y-10 relative overflow-hidden">
+<section class="max-w-5xl mx-auto px-8 py-24 text-center">
+<div class="py-20 px-8 rounded-3xl space-y-8 relative overflow-hidden" style="background:linear-gradient(135deg,#3A0B10 0%,#B11226 100%);">
 <div class="relative z-10 space-y-6">
-<h2 class="text-5xl md:text-6xl font-extrabold font-headline text-on-primary-container leading-tight">
-                        Ready to enter the <br/>Ethereal Garden?
-                    </h2>
-<p class="text-on-primary-container/80 max-w-xl mx-auto text-lg">
-                        Join 20,000+ souls cultivating warmth across the digital expanse.
-                    </p>
-<div class="pt-6">
-<button class="sunlight-glow text-on-primary px-12 py-5 rounded-full font-headline font-bold text-xl ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
-                            Install the Sanctuary
-                        </button>
+  <p class="text-white/60 font-body text-sm uppercase tracking-widest">You already know who you want to call.</p>
+  <h2 class="font-headline font-extrabold text-white leading-tight" style="font-size:clamp(2rem,5vw,3.5rem);">
+    Stop meaning to reach out.<br/>
+    <span class="italic" style="color:#FFE3DA;">Start actually doing it.</span>
+  </h2>
+  <p class="text-white/75 max-w-xl mx-auto text-lg font-body leading-relaxed">
+    Kindred Glow takes 30 seconds to set up and works right from your home screen. No app store. No subscription. Just you and the people you love.
+  </p>
+  <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <button class="text-on-surface px-12 py-5 rounded-full font-headline font-bold text-xl active:scale-95 transition-transform pwa-install-btn" style="background:#FFE3DA; color:#3A0B10;">
+      Add to Home Screen — Free
+    </button>
+  </div>
+  <p class="text-white/50 text-sm font-body">Works on iPhone, Android &amp; desktop · No account required</p>
 </div>
-</div>
-<!-- Ambient background glow elements -->
-<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-tertiary-fixed-dim/30 rounded-full blur-3xl"></div>
 </div>
 </section>
 </main>

@@ -15,7 +15,7 @@
           extend: {
             "colors": {
                     "secondary-container": "#ccebc2",
-                    "on-primary-fixed": "#4c230a",
+                    "on-primary-fixed": "#3A0B10",
                     "on-tertiary-fixed": "#204a51",
                     "surface-tint": "#E11D48",
                     "tertiary": "#426b72",
@@ -25,7 +25,7 @@
                     "on-error": "#ffffff",
                     "primary-fixed": "#FFE3DA",
                     "on-surface": "#3A0B10",
-                    "surface-container-high": "#f1ede9",
+                    "surface-container-high": "#FFE3DA",
                     "background": "#FFFAF9",
                     "on-background": "#3A0B10",
                     "surface-container-low": "#FFF5F3",
@@ -33,8 +33,8 @@
                     "on-error-container": "#6e1400",
                     "inverse-surface": "#0e0e0d",
                     "on-secondary-fixed": "#2c4528",
-                    "surface-container": "#f7f3ef",
-                    "on-primary-container": "#64361c",
+                    "surface-container": "#FFEDE9",
+                    "on-primary-container": "#3A0B10",
                     "inverse-on-surface": "#9f9c9a",
                     "on-tertiary": "#ffffff",
                     "secondary": "#506b4a",
@@ -49,10 +49,10 @@
                     "secondary-fixed-dim": "#beddb5",
                     "error-dim": "#791903",
                     "on-surface-variant": "#666461",
-                    "primary-dim": "#7e4c30",
+                    "primary-dim": "#B11226",
                     "on-secondary": "#ffffff",
                     "surface-container-lowest": "#ffffff",
-                    "on-primary-fixed-variant": "#6f3f24",
+                    "on-primary-fixed-variant": "#B11226",
                     "surface-dim": "#e5e2dd",
                     "outline": "#82807c",
                     "on-secondary-fixed-variant": "#486242",
@@ -73,9 +73,9 @@
                     "full": "9999px"
             },
             "fontFamily": {
-                    "headline": ["Fraunces"],
-                    "body": ["Inter"],
-                    "label": ["Inter"]
+                    "headline": ["Fraunces", "serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
             }
           },
         },
@@ -83,11 +83,23 @@
     </script>
 <style>
         body { font-family: 'Inter', sans-serif; background-color: #FFFAF9; color: #3A0B10; }
-        .font-headline { font-family: 'Fraunces', sans-serif; }
+        .font-headline { font-family: 'Fraunces', serif; }
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); }
-        .sunlight-glow { background: linear-gradient(135deg, #E11D48 0%, #FFE3DA 100%); }
-        .ethereal-shadow { box-shadow: 0 40px 60px -15px rgba(140, 87, 58, 0.06); }
+        .glass-nav { background: rgba(255,250,249,0.85); backdrop-filter: blur(24px); }
+        .sunlight-glow { background: linear-gradient(135deg, #B11226 0%, #FF4D2D 100%); }
+        .ethereal-shadow { box-shadow: 0 40px 60px -15px rgba(177,18,38,0.15); }
+        @media (max-width: 768px) {
+          section.relative.min-h-\[921px\] { min-height: auto !important; padding-top: 5rem !important; padding-bottom: 3rem !important; }
+          .md\:col-span-7 img.absolute { display: none !important; }
+          .rotate-2 { transform: none !important; margin: 0 auto !important; }
+          .-rotate-6 { display: none !important; }
+          .py-24 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+          .py-32 { padding-top: 2.5rem !important; padding-bottom: 2.5rem !important; }
+          .lg\:flex-row { flex-direction: column !important; }
+          .lg\:w-1\/2 { width: 100% !important; }
+          h1.text-6xl { font-size: 3rem !important; line-height: 1.1 !important; }
+          .px-8 { padding-left: 1rem !important; padding-right: 1rem !important; }
+        }
     </style>
 
     <link rel="manifest" href="/manifest.json">
@@ -98,14 +110,15 @@
     <link rel="apple-touch-icon" href="/icons/icon-192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta property="og:title" content="Kindred Glow | Connection, at your own pace.">
-    <meta property="og:description" content="Nurture the relationships that matter most.">
+    <meta property="og:title" content="Kindred Glow | Never lose touch with the people who matter.">
+    <meta property="og:description" content="Kindred Glow gently reminds you to reach out, helps you remember what matters about each person, and makes staying connected feel effortless.">
     <meta property="og:image" content="https://kindredglow.ai/og-image.jpg">
     <meta property="og:url" content="https://kindredglow.ai">
     <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
 <!-- Top Navigation Bar -->
@@ -113,9 +126,9 @@
 <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
 <div class="text-xl font-bold text-rose-900 dark:text-orange-50 font-headline tracking-tight">Kindred Glow</div>
 <div class="hidden md:flex items-center gap-10">
-<a class="text-rose-800 dark:text-orange-200 font-semibold border-b-2 border-rose-400 pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="index.html#features">Features</a>
-<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="index.html#install">Installation</a>
-<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-orange-600 transition-all duration-300" href="support.html">Support</a>
+<a class="text-rose-800 dark:text-orange-200 font-semibold border-b-2 border-rose-400 pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-rose-600 transition-all duration-300" href="index.html#features">Features</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-rose-600 transition-all duration-300" href="index.html#install">Installation</a>
+<a class="text-stone-500 dark:text-stone-400 font-medium pb-1 font-plus-jakarta-sans tracking-tight text-sm hover:text-rose-600 transition-all duration-300" href="support.html">Support</a>
 </div>
 <button class="bg-primary hover:opacity-90 text-on-primary px-6 py-2.5 rounded-full font-headline text-sm font-semibold active:scale-95 transition-all duration-200">
                 Get Started
@@ -124,29 +137,70 @@
 </nav>
 <main class="pt-20">
 <!-- Hero Section -->
-<section class="relative min-h-[921px] flex items-center justify-center px-8 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-20" data-alt="Dreamy abstract background with soft golden bokeh lights and warm ethereal glows in a botanical garden setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJXRdZMkg9b_H8kXWrfKwEGdxd0SG8F2bVI7pvUwPPRLFxl3aJ0EpLTZXNCRAd9fef2LqbTs7bNZc9RzAlr4Z9D6qJzVG3p-bWi0MBlt7bYzlUMpXeFf5nJzXeYiHRH61MJOgC9zaEVNrRl5n5c29krhHfudMSEtfTeYOyAFplu1_04gc6_1mcaV1sPECR1-g8u5XAHRAeFFwDCnPhbG7aFzGVBZXOk7979a1j8ddCSf5veSUA1RDOHPSdSerE8rHyC7OaSiub1iU"/>
-<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface to-surface"></div>
-</div>
+<section class="relative flex items-center justify-center px-8 pt-32 pb-20 overflow-hidden">
+<div class="absolute inset-0 z-0" style="background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(225,29,72,0.07) 0%, transparent 70%), radial-gradient(ellipse 60% 40% at 80% 80%, rgba(255,77,45,0.05) 0%, transparent 60%);"></div>
 <div class="relative z-10 max-w-4xl text-center space-y-8">
+  <p class="text-sm font-semibold tracking-widest uppercase font-body" style="color:#E11D48; letter-spacing:0.18em;">Think of someone you miss right now.</p>
+  <h1 class="font-headline font-extrabold text-on-surface leading-[1.05] tracking-tight" style="font-size:clamp(2.8rem,8vw,5.5rem);">
+    Never lose touch with<br/>
+    <span class="italic" style="color:#E11D48;">the people who matter.</span>
+  </h1>
+  <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
+    Kindred Glow gently reminds you to reach out, helps you remember what matters about each person, and makes staying connected feel effortless — not like another chore.
+  </p>
+  <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+    <button class="text-white px-10 py-4 rounded-full font-headline font-bold text-lg active:scale-95 transition-transform pwa-install-btn" style="background:linear-gradient(135deg,#B11226 0%,#FF4D2D 100%); box-shadow:0 8px 24px rgba(177,18,38,0.28);">
+      Start Reconnecting — Free
+    </button>
+    <a href="#how-it-works" class="text-on-surface-variant px-8 py-4 rounded-full font-body font-medium text-base border border-outline-variant hover:bg-surface-container transition-colors">
+      See how it works ↓
+    </a>
+  </div>
+  <p class="text-sm text-on-surface-variant font-body opacity-60 pt-2">No account required · Works on any device · Add to home screen in seconds</p>
+</div>
+</section>
 
-<h1 class="text-6xl md:text-8xl font-extrabold font-headline text-on-surface leading-[1.1] tracking-tight">
-                    Connection, <br/>
-<span class="text-primary italic">at your own pace.</span>
-</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto font-body leading-relaxed">
-                    Kindred Glow transforms your social orbit into a serene garden. No noise, no pressure—just the warmth of meaningful presence.
-                </p>
-<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-<button class="sunlight-glow text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
-                        Install the Sanctuary
-                    </button>
-<button class="bg-surface-container-low text-on-surface px-8 py-4 rounded-full font-headline font-semibold text-lg border border-outline-variant/10 hover:bg-surface-container transition-colors">
-                        Explore the Garden
-                    </button>
-</div>
-</div>
+<!-- Emotional Band -->
+<section class="py-12 px-8" style="background:linear-gradient(135deg,#3A0B10 0%,#B11226 50%,#E11D48 100%);">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="font-headline font-bold text-white leading-snug" style="font-size:clamp(1.2rem,3.5vw,2rem);">
+      "The average person loses touch with 90% of their close friends by age 45."
+    </p>
+    <p class="mt-3 font-body text-base" style="color:rgba(255,255,255,0.75);">Kindred Glow exists so that doesn't have to be you.</p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="how-it-works" class="max-w-5xl mx-auto px-8 py-24">
+  <div class="text-center mb-16">
+    <h2 class="font-headline font-extrabold text-on-surface mb-4" style="font-size:clamp(2rem,5vw,3rem);">
+      Staying close has never been<br/><span class="italic" style="color:#E11D48;">this simple.</span>
+    </h2>
+    <p class="text-on-surface-variant font-body text-lg max-w-xl mx-auto">Three steps. No learning curve. Just the people you love.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-surface-container-low rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#B11226,#E11D48);">1</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Add your people</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">Add the friends, family, or old colleagues you want to stay close to. Takes 30 seconds.</p>
+    </div>
+    <div class="rounded-2xl p-8 text-center hover:shadow-lg transition-shadow" style="background:#FFEDE9; border:2px solid rgba(225,29,72,0.15);">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#E11D48,#FF4D2D);">2</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Get a gentle nudge</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">Kindred Glow notices when it's been a while and sends you a warm reminder — not a guilt trip, just a nudge.</p>
+    </div>
+    <div class="bg-surface-container-low rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+      <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center text-white font-headline font-bold text-2xl" style="background:linear-gradient(135deg,#FF4D2D,#E11D48);">3</div>
+      <h3 class="font-headline font-bold text-xl text-on-surface mb-3">Reach out & reconnect</h3>
+      <p class="text-on-surface-variant font-body text-sm leading-relaxed">One tap to send a message, share a memory, or just say you were thinking of them. That's all it takes.</p>
+    </div>
+  </div>
+  <div class="text-center mt-14">
+    <button class="text-white px-10 py-4 rounded-full font-headline font-bold text-lg active:scale-95 transition-transform pwa-install-btn" style="background:linear-gradient(135deg,#B11226 0%,#FF4D2D 100%); box-shadow:0 8px 24px rgba(177,18,38,0.28);">
+      Add to Home Screen — Free
+    </button>
+    <p class="mt-4 text-sm text-on-surface-variant font-body">No app store. No signup required. Just tap and go.</p>
+  </div>
 </section>
 <!-- The Calm Stream - Bento Grid Philosophy -->
 <section class="max-w-7xl mx-auto px-8 py-24">
@@ -207,7 +261,7 @@
 <div class="lg:w-1/2 relative">
 <div class="bg-white p-8 rounded-lg ethereal-shadow rotate-2 relative z-10 max-w-md ml-auto">
 <div class="flex items-center gap-4 mb-6">
-<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600">
+<div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-rose-600">
 <span class="material-symbols-outlined">spa</span>
 </div>
 <span class="font-headline font-bold">The Quiet Hour</span>
@@ -241,28 +295,28 @@
 </div>
 </section>
 <!-- Final CTA Section -->
-<section class="max-w-7xl mx-auto px-8 py-32 text-center">
-<div class="bg-primary-container/20 py-20 px-8 rounded-xl space-y-10 relative overflow-hidden">
-<div class="relative z-10 space-y-6">
-<h2 class="text-5xl md:text-6xl font-extrabold font-headline text-on-primary-container leading-tight">
-                        Ready to enter the <br/>Ethereal Garden?
-                    </h2>
-<p class="text-on-primary-container/80 max-w-xl mx-auto text-lg">
-                        Join 20,000+ souls cultivating warmth across the digital expanse.
-                    </p>
-<div class="pt-6">
-<button class="sunlight-glow text-on-primary px-12 py-5 rounded-full font-headline font-bold text-xl ethereal-shadow active:scale-95 transition-transform pwa-install-btn">
-                            Install the Sanctuary
-                        </button>
-</div>
-</div>
-<!-- Ambient background glow elements -->
-<div class="absolute -top-24 -left-24 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-tertiary-fixed-dim/30 rounded-full blur-3xl"></div>
-</div>
+<section class="max-w-5xl mx-auto px-8 py-24 text-center">
+  <div class="py-20 px-8 rounded-3xl space-y-8 relative overflow-hidden" style="background:linear-gradient(135deg,#3A0B10 0%,#B11226 100%);">
+    <div class="relative z-10 space-y-6">
+      <p class="font-body text-sm uppercase tracking-widest" style="color:rgba(255,255,255,0.6);">You already know who you want to reach out to.</p>
+      <h2 class="font-headline font-extrabold text-white leading-tight" style="font-size:clamp(2rem,5vw,3.5rem);">
+        Stop meaning to reach out.<br/>
+        <span class="italic" style="color:#FFE3DA;">Start actually doing it.</span>
+      </h2>
+      <p class="max-w-xl mx-auto text-lg font-body leading-relaxed" style="color:rgba(255,255,255,0.75);">
+        Kindred Glow takes 30 seconds to set up and works right from your home screen. No app store. No subscription. Just you and the people you love.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button class="px-12 py-5 rounded-full font-headline font-bold text-xl active:scale-95 transition-transform pwa-install-btn" style="background:#FFE3DA; color:#3A0B10;">
+          Add to Home Screen — Free
+        </button>
+      </div>
+      <p class="font-body text-sm" style="color:rgba(255,255,255,0.5);">Works on iPhone, Android &amp; desktop · No account required</p>
+    </div>
+  </div>
 </section>
 
-<!-- Email Capture Section -->
+<!-- Email Capture / Waitlist Section -->
 <section id="install" class="max-w-3xl mx-auto px-8 py-20 text-center">
   <div class="relative rounded-3xl p-10 md:p-14 overflow-hidden" style="background:linear-gradient(135deg,#FFF5F3 0%,#FFE3DA 100%); border:1.5px solid #FFBCAE;">
     <div class="relative z-10 space-y-6">
@@ -271,25 +325,12 @@
         Be first to know when<br/><span class="italic" style="color:#E11D48;">Kindred Glow launches.</span>
       </h2>
       <p class="text-on-surface-variant font-body text-base max-w-md mx-auto leading-relaxed">
-        Join the waitlist and get early access, plus a personal note from the founder when we go live.
+        Join the waitlist and get early access, plus a personal note when we go live.
       </p>
-      <!-- Email form -->
-      <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto pt-2">
-        <input 
-          type="email" 
-          id="waitlist-email"
-          placeholder="your@email.com" 
-          class="flex-1 px-5 py-3.5 rounded-full font-body text-base border-2 outline-none focus:border-primary transition-colors"
-          style="border-color:#FFBCAE; background:#fff; color:#3A0B10;"
-        />
-        <button 
-          onclick="submitWaitlist()"
-          class="px-7 py-3.5 rounded-full font-headline font-bold text-white text-base transition-all active:scale-95"
-          style="background:linear-gradient(135deg,#B11226,#FF4D2D); white-space:nowrap;">
-          Join Waitlist
-        </button>
+      <!-- Kit form embed -->
+      <div class="max-w-md mx-auto pt-2">
+        <script async data-uid="30e1fa75f3" src="https://kindredglow.kit.com/30e1fa75f3/index.js"></script>
       </div>
-      <p id="waitlist-msg" class="text-sm font-body hidden" style="color:#B11226;font-weight:600;">🎉 You're on the list! We'll be in touch soon.</p>
       <p class="text-xs text-on-surface-variant font-body opacity-60">No spam, ever. Unsubscribe anytime.</p>
     </div>
   </div>
@@ -309,24 +350,24 @@
 <div>
 <h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Product</h4>
 <ul class="space-y-4">
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="about.html#philosophy">Features</a></li>
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#changelog">Installation</a></li>
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#rules">Philosophy</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="about.html#philosophy">Features</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#changelog">Installation</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html#rules">Philosophy</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Resources</h4>
 <ul class="space-y-4">
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#privacy">Support</a></li>
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#terms">Changelog</a></li>
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html">Garden Rules</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#privacy">Support</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html#terms">Changelog</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="support.html">Garden Rules</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-stone-700 dark:text-stone-300 mb-6 font-headline uppercase tracking-widest text-xs">Legal</h4>
 <ul class="space-y-4">
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Privacy Policy</a></li>
-<li><a class="text-stone-500 dark:text-stone-500 hover:text-orange-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Terms of Service</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Privacy Policy</a></li>
+<li><a class="text-stone-500 dark:text-stone-500 hover:text-rose-700 dark:hover:text-orange-300 underline-offset-4 hover:underline transition-opacity" href="legal.html">Terms of Service</a></li>
 </ul>
 </div>
 </div>
@@ -361,78 +402,23 @@
 
 <!-- Push Notification Permission Modal -->
 <div id="push-modal" class="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-4 hidden" style="background:rgba(58,11,16,0.5); backdrop-filter:blur(4px);">
-  <div class="w-full max-w-sm rounded-3xl p-8 text-center space-y-5 relative" style="background:#FFFAF9; box-shadow:0 20px 60px rgba(177,18,38,0.25);">
-    <!-- Flame icon -->
-    <div class="w-16 h-16 mx-auto rounded-2xl flex items-center justify-center text-3xl" style="background:linear-gradient(135deg,#B11226,#FF4D2D);">
-      🔥
-    </div>
+  <div class="w-full max-w-sm rounded-3xl p-8 text-center space-y-5" style="background:#FFFAF9; box-shadow:0 20px 60px rgba(177,18,38,0.25);">
+    <div class="text-4xl">🔥</div>
     <h3 class="font-headline font-bold text-on-surface text-xl">Stay connected effortlessly</h3>
-    <p class="text-on-surface-variant font-body text-sm leading-relaxed">
-      Want a gentle nudge when it's time to reach out to someone you care about?
-    </p>
+    <p class="text-on-surface-variant font-body text-sm leading-relaxed">Want a gentle nudge when it's time to reach out to someone you care about?</p>
     <div class="space-y-3 pt-1">
-      <button onclick="requestPushPermission()" class="w-full py-3.5 rounded-full font-headline font-bold text-white transition-all active:scale-95" style="background:linear-gradient(135deg,#B11226,#FF4D2D);">
-        Yes, remind me 🌿
-      </button>
-      <button onclick="dismissPushModal()" class="w-full py-3 rounded-full font-body text-sm transition-colors" style="color:#6B2030; background:transparent;">
-        Maybe later
-      </button>
+      <button onclick="requestPushPermission()" class="w-full py-3.5 rounded-full font-headline font-bold text-white" style="background:linear-gradient(135deg,#B11226,#FF4D2D);">Yes, remind me 🌿</button>
+      <button onclick="dismissPushModal()" class="w-full py-3 rounded-full font-body text-sm" style="color:#6B2030;">Maybe later</button>
     </div>
   </div>
 </div>
 
 <script>
-// ── Waitlist form ──────────────────────────────────────────
-function submitWaitlist() {
-  const email = document.getElementById('waitlist-email').value;
-  const msg = document.getElementById('waitlist-msg');
-  if (!email || !email.includes('@')) {
-    document.getElementById('waitlist-email').style.borderColor = '#E11D48';
-    return;
-  }
-  // Store locally (replace with your backend/Netlify form later)
-  const existing = JSON.parse(localStorage.getItem('kg_waitlist') || '[]');
-  existing.push({ email, date: new Date().toISOString() });
-  localStorage.setItem('kg_waitlist', JSON.stringify(existing));
-  msg.classList.remove('hidden');
-  document.getElementById('waitlist-email').value = '';
-  document.getElementById('waitlist-email').style.borderColor = '#FFBCAE';
-}
-
-// Allow enter key on email input
-document.getElementById('waitlist-email')?.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') submitWaitlist();
-});
-
-// ── Push notification modal ────────────────────────────────
-function showPushModal() {
-  if ('Notification' in window && Notification.permission === 'default') {
-    document.getElementById('push-modal').classList.remove('hidden');
-  }
-}
-
-function dismissPushModal() {
-  document.getElementById('push-modal').classList.add('hidden');
-  localStorage.setItem('kg_push_dismissed', 'true');
-}
-
-async function requestPushPermission() {
-  dismissPushModal();
-  if ('Notification' in window) {
-    const permission = await Notification.requestPermission();
-    if (permission === 'granted') {
-      new Notification('Kindred Glow 🔥', {
-        body: "We'll gently remind you to stay connected with the people who matter.",
-        icon: '/icons/icon-192.png'
-      });
-    }
-  }
-}
-
-// Show push modal after 10 seconds if not dismissed before
-const pushDismissed = localStorage.getItem('kg_push_dismissed');
-if (!pushDismissed) {
-  setTimeout(showPushModal, 10000);
-}
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(()=>{});}
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt',(e)=>{e.preventDefault();deferredPrompt=e;document.querySelectorAll('.pwa-install-btn').forEach(btn=>{btn.addEventListener('click',async()=>{if(deferredPrompt){deferredPrompt.prompt();const{outcome}=await deferredPrompt.userChoice;deferredPrompt=null;}});});});
+function dismissPushModal(){document.getElementById('push-modal').classList.add('hidden');localStorage.setItem('kg_push_dismissed','true');}
+async function requestPushPermission(){dismissPushModal();if('Notification'in window){const p=await Notification.requestPermission();if(p==='granted'){new Notification('Kindred Glow 🔥',{body:"We'll remind you to stay connected with the people who matter.",icon:'/icons/icon-192.png'});}}}
+if(!localStorage.getItem('kg_push_dismissed')){setTimeout(()=>{if('Notification'in window&&Notification.permission==='default'){document.getElementById('push-modal').classList.remove('hidden');}},10000);}
 </script>
 </body></html>
